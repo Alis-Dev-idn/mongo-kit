@@ -1,6 +1,6 @@
 {
   "name": "@alisdev/mongo-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Decorator-based MongoDB schema & repository library with fluent query builder, soft delete, TTL, and custom indexes",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
