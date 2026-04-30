@@ -34,6 +34,14 @@
     "ttl"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alis-Dev-idn/mongo-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alis-Dev-idn/mongo-kit/issues"
+  },
+  "homepage": "https://github.com/Alis-Dev-idn/mongo-kit#readme",
   "dependencies": {
     "mongoose": "^8.x",
     "zod": "^3.x",
