@@ -1,4 +1,4 @@
-# @workspace/mongo-kit
+# @alisdev/mongo-kit
 
 > Decorator-based MongoDB schema & repository library with fluent query builder, soft delete, hard delete, TTL, custom indexes, and auto-populate relations.
 
@@ -19,7 +19,7 @@
 ## Installation
 
 ```bash
-npm install @workspace/mongo-kit
+npm install @alisdev/mongo-kit
 ```
 
 ## Quick Start
@@ -32,7 +32,7 @@ import {
   BaseRepository, BaseEntity, BaseEntitySchema,
   CustomBuilder, SearchCustom, MultipleSearch, CustomOperation,
   Pageable
-} from "@workspace/mongo-kit";
+} from "@alisdev/mongo-kit";
 import { z } from "zod";
 ```
 
@@ -393,7 +393,7 @@ All operations also have `OPERATION_JOIN_*` variants that trigger `$lookup` for 
 
 ```typescript
 // src/database.ts
-import { MongoConnection } from "@workspace/mongo-kit";
+import { MongoConnection } from "@alisdev/mongo-kit";
 
 export async function connectDatabase() {
   await MongoConnection.connect({
@@ -414,7 +414,7 @@ export async function connectDatabase() {
 // src/app.ts
 import express from "express";
 import { connectDatabase } from "./database";
-import { MongoConnection } from "@workspace/mongo-kit";
+import { MongoConnection } from "@alisdev/mongo-kit";
 
 const app = express();
 
@@ -580,7 +580,7 @@ import {
   MongoConnection, Schema, VirtualField, Repository, Relation,
   Index, TTL, BaseRepository, BaseEntity, BaseEntitySchema,
   CustomBuilder, SearchCustom, CustomOperation, Pageable
-} from "@workspace/mongo-kit";
+} from "@alisdev/mongo-kit";
 import { z } from "zod";
 
 // ── Connect ───────────────────────────────────────────────────────
