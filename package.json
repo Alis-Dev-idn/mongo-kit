@@ -1,0 +1,50 @@
+{
+  "name": "@workspace/mongo-kit",
+  "version": "1.0.0",
+  "description": "Decorator-based MongoDB schema & repository library with fluent query builder, soft delete, TTL, and custom indexes",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "dev": "tsc -w -p tsconfig.esm.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "decorator",
+    "repository",
+    "query-builder",
+    "typescript",
+    "soft-delete",
+    "ttl"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^8.x",
+    "zod": "^3.x",
+    "reflect-metadata": "^0.2.x"
+  },
+  "devDependencies": {
+    "typescript": "^5.x",
+    "@types/node": "^20.x",
+    "rimraf": "^5.x"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
